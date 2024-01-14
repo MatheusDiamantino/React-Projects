@@ -1,0 +1,11 @@
+.botaoCTA_2 {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: 0.5s;
+  border: none;
+  color: white;
+}
+
+.botaoCTA_2:hover {
+  color: rgb(119, 119, 119);
+}

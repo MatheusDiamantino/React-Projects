@@ -1,0 +1,78 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Adicionado para lidar com telas menores */
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: rgba(0, 0, 0, 0.219) outset 0.5px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: auto; /* Ajustado para ocupar o espaço restante na tela */
+}
+
+.item {
+    margin-right: 1.5em;
+    font-size: 0.9em;
+    letter-spacing: 0.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.item a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.item a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: bottom 0.3s ease, background-color 0.3s ease;
+}
+
+.item:hover a::before {
+    bottom: 0;
+    background-color: #000000;
+}
+
+.navbar img {
+    width: auto; /* Ajustado para tamanho automático */
+    height: 50px;
+    max-width: 100%; /* Adicionado para garantir que não ultrapasse o tamanho máximo */
+    transition: 1s;
+}
+
+.navbar img:hover {
+    transform: scale(1.2);
+    background-color: #fcfcfc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Adicionada media query para ajustar o layout em telas menores */
+@media only screen and (max-width: 768px) {
+    .list {
+        margin-left: 0; /* Removido espaçamento à esquerda em telas menores */
+        justify-content: center; /* Ajustado para centralizar os itens */
+    }
+
+    .item {
+        margin-right: 1em; /* Reduzido a margem entre os itens em telas menores */
+    }
+}

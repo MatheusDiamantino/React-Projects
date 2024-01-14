@@ -1,0 +1,74 @@
+/* Estilos para telas grandes (desktops, tablets) */
+.conteudo {
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
+
+.imagem {
+    max-width: 40%;
+    margin-right: 20px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 3%;
+}
+
+.texto {
+    flex-grow: 1; /* Para ocupar o espaço restante na linha */
+}
+
+.texto h3 {
+    text-align: left;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.texto p {
+    text-align: left;
+    margin-right: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.btn_sobre {
+    border: none;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 600;
+    border: white 1px solid;
+    transition: 1s;
+    margin-top: 20px;
+}
+
+.btn_sobre:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Estilos para telas médias (tablets, smartphones em modo paisagem) */
+@media only screen and (max-width: 1024px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .imagem {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .texto p {
+        margin-right: 0;
+    }
+}
+
+/* Estilos para telas pequenas (smartphones em modo retrato) */
+@media only screen and (max-width: 600px) {
+    .btn_sobre {
+        margin-top: 10px;
+    }
+}

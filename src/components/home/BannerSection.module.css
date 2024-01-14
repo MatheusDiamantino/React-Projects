@@ -1,0 +1,53 @@
+/* Estilos para telas grandes (desktops, tablets) */
+.column_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content_wrapper {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+}
+
+.responsiveContent h2 {
+  color: white;
+  border: 5px solid white;
+  padding: 30px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para telas médias (tablets, smartphones em modo paisagem) */
+@media only screen and (max-width: 1024px) {
+  .content_wrapper {
+    padding: 15px;
+  }
+
+  .responsiveContent h2 {
+    padding: 20px;
+  }
+}
+
+/* Estilos para telas pequenas (smartphones em modo retrato) */
+@media only screen and (max-width: 600px) {
+  .content_wrapper {
+    padding: 10px;
+  }
+
+  .responsiveContent h2 {
+    padding: 15px;
+  }
+}

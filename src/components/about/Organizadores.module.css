@@ -1,0 +1,189 @@
+.lider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background-color: black;
+}
+
+.integrantes {
+  margin: 50px;
+}
+
+.lider ul {
+  list-style: none;
+  display: flex;
+}
+
+.lider ul li {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+  text-align: center;
+  /* Ajustado para centralizar o texto em telas menores */
+}
+
+.lider ul img {
+  height: auto;
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  clip-path: circle(50%);
+  margin-bottom: 10px;
+  /* Adicionado espaçamento inferior para melhorar visualização em telas menores */
+  transition: 2s;
+}
+
+.lider ul img:hover {
+  transform: scale(1.06);
+}
+
+.lider h5 {
+  font-size: 15px;
+  color: #5c5c5c96;
+}
+
+
+.lider h1 {
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration-line: overline;
+  text-decoration-color: white;
+  color: rgb(255, 255, 255);
+}
+
+.principal {
+  margin-bottom: 5em;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon svg {
+  font-size: 25px;
+  margin: 0 15px;
+  color: white;
+  transition: 1s;
+}
+
+.icon svg:hover {
+  color: rgba(236, 235, 235, 0.76);
+  transform: scale(1.1);
+}
+
+/* Adicionado media query para ajustar o layout em telas menores */
+@media only screen and (max-width: 768px) {
+  .lider {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lider ul li {
+    width: 100%;
+    /* Ocupar toda a largura em telas menores */
+  }
+
+  .lider h1 {
+    margin-top: 10px;
+    /* Reduzido o espaçamento superior em telas menores */
+  }
+
+  .icon {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.principal {
+  margin-bottom: 5em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Adicionado para ajustar em telas menores */
+}
+
+
+.organizadores p {
+  text-align: center;
+  margin-top: 20px;
+}
+/* Estilos para .leftContent */
+.leftContent {
+  flex: 1;
+}
+
+.leftContent h3 {
+  font-size: 30px;
+  color: rgb(233, 180, 5);
+  text-align: left;
+  align-items: center;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+.leftContent p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  margin-right: 30px;
+  margin-top: 5%;
+}
+
+.user {
+  height: auto;
+  max-width: 30%; /* Ocupar toda a largura em telas menores */
+  margin-top: 30px;
+  clip-path: circle(50%);
+  transition: 2s;
+  margin-right: 0; /* Removido margin-right para melhor ajuste em telas menores */
+}
+
+.user:hover {
+  transform: scale(1.06);
+}
+
+/* Estilos para .section_container */
+.section_container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url(../img/cartoon.png);
+  flex-wrap: wrap; /* Adicionado para ajustar em telas menores */
+}
+
+/* Estilos para .section_content */
+.section_content {
+  position: relative;
+  width: 100%; /* Ocupar toda a largura em telas menores */
+}
+
+.section_content h1,
+.section_content h2 {
+  text-align: center;
+  margin: 30px 30px;
+  padding: 10px;
+}
+
+.section_content h1::before,
+.section_content h1::after {
+  width: 100%; /* Ocupar toda a largura em telas menores */
+}
+
+/* Adicionado media query para ajustar o layout em telas menores */
+@media only screen and (max-width: 768px) {
+  .section_content h1,
+  .section_content h2 {
+    margin: 15px 15px;
+  }
+}
