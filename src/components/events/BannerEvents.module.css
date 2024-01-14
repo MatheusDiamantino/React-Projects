@@ -1,0 +1,73 @@
+.container {
+    background: url(../img/culto.png) center/cover;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-position 0.5s ease;
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+.columnWrapper {
+    display: flex;
+    flex-wrap: wrap; /* Adicionado para ajustar em telas menores */
+    justify-content: center;
+}
+
+.contentWrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.responsiveContent h2 {
+    color: white;
+    padding: 15px; /* Reduzido o espaçamento interno para telas menores */
+    text-align: center;
+    position: relative;
+    border: 3px solid transparent; /* Reduzido a largura da borda para telas menores */
+    text-transform: uppercase;
+    letter-spacing: 0.3em; /* Reduzido o espaçamento entre as letras */
+}
+
+.responsiveContent h2::before,
+.responsiveContent h2::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 6px); /* Ajustado para a largura da borda reduzida */
+    height: calc(100% + 6px); /* Ajustado para a largura da borda reduzida */
+    box-sizing: border-box;
+    border: 3px white solid; /* Reduzido a largura da borda para telas menores */
+    top: -3px; /* Ajustado para a largura da borda reduzida */
+    left: -3px; /* Ajustado para a largura da borda reduzida */
+    pointer-events: none;
+}
+
+.responsiveContent h2::before {
+    transform: translate(6px, 6px); /* Ajustado para a largura da borda reduzida */
+}
+
+.responsiveContent h2::after {
+    transform: translate(-6px, -6px); /* Ajustado para a largura da borda reduzida */
+}
+
+/* Adicionado media query para ajustar o layout em telas menores */
+@media only screen and (max-width: 768px) {
+    .container {
+        height: 70vh; /* Ajustado a altura para telas menores */
+    }
+
+    .columnWrapper {
+        flex-direction: column; /* Alterado para layout de coluna em telas menores */
+    }
+
+    .responsiveContent h2 {
+        font-size: 18px; /* Ajustado o tamanho da fonte para telas menores */
+    }
+}

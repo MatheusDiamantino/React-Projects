@@ -1,0 +1,108 @@
+/* Estilos para telas grandes (desktops, tablets) */
+.Cultos,
+.contato {
+    background-color: white;
+}
+
+.conteudo2 h3 {
+    margin: 45px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.conteudo2 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.conteudo2 h5 {
+    margin: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.conteudo2 p {
+    margin: 30px;
+    font-weight: 400;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.border {
+    text-decoration-line: underline;
+}
+
+.btn_cultos {
+    border: none;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 600;
+    transition: 1s;
+    background-color: black;
+    margin-bottom: 30px;
+    margin-left: 34em;
+}
+
+.btn_cultos:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Estilos para telas médias (tablets, smartphones em modo paisagem) */
+@media only screen and (max-width: 1024px) {
+    .conteudo2 h3 {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+
+    .conteudo2 h4 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .conteudo2 h5,
+    .conteudo2 p {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .btn_cultos {
+        margin-left: 20em;
+    }
+}
+
+/* Estilos para telas pequenas (smartphones em modo retrato) */
+@media only screen and (max-width: 600px) {
+    .conteudo2 h3 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .conteudo2 h4 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .conteudo2 h5,
+    .conteudo2 p {
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    .btn_cultos {
+        margin-left: 10em;
+    }
+}
