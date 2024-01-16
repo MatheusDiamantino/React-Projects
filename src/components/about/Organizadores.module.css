@@ -158,7 +158,7 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
-  background-image: url(../img/cartoon.png);
+  background-image: url(../img/cartoon.webp);
   flex-wrap: wrap; /* Adicionado para ajustar em telas menores */
 }
 

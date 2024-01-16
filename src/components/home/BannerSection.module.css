@@ -1,20 +1,28 @@
-/* Estilos para telas grandes (desktops, tablets) */
+/* Variáveis */
+:root {
+  --max-width: 1200px;
+  --padding-large: 30px;
+  --padding-medium: 20px;
+  --padding-small: 15px;
+}
+
+/* Estilos para todas as telas */
 .column_wrapper {
   display: flex;
   justify-content: center;
 }
 
 .content_wrapper {
-  max-width: 1200px;
+  max-width: var(--max-width);
   width: 100%;
-  padding: 20px;
+  padding: var(--padding-large);
   height: 100%;
 }
 
 .responsiveContent h2 {
   color: white;
   border: 5px solid white;
-  padding: 30px;
+  padding: var(--padding-large);
   text-align: center;
 }
 
@@ -33,21 +41,21 @@
 /* Estilos para telas médias (tablets, smartphones em modo paisagem) */
 @media only screen and (max-width: 1024px) {
   .content_wrapper {
-    padding: 15px;
+    padding: var(--padding-medium);
   }
 
   .responsiveContent h2 {
-    padding: 20px;
+    padding: var(--padding-medium);
   }
 }
 
 /* Estilos para telas pequenas (smartphones em modo retrato) */
 @media only screen and (max-width: 600px) {
   .content_wrapper {
-    padding: 10px;
+    padding: var(--padding-small);
   }
 
   .responsiveContent h2 {
-    padding: 15px;
+    padding: var(--padding-small);
   }
 }

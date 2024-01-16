@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from "./BannerSobre.module.css";
 import ButtonLink from '../layout/ButtonLink';
-import sobre from '../img/sobre.png'
+import sobre from '../img/sobre.webp'
 
 function BannerSobre() {
     return (
         <div>
             <section>
                 <div className={styles.conteudo}>
-                    <img src={sobre} alt="Imagem do Sobre" className={styles.imagem} />
+                    <img src={sobre} loading="lazy" alt="Imagem do Sobre" className={styles.imagem} />
                     <div className={styles.texto}>
                         <h3>Bem-Vindos ao Ministério Reedificando o Altar!</h3>
                         <p>
