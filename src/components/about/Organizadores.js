@@ -1,5 +1,5 @@
 import React from 'react'
-import user from '../img/teste.png'
+import user from '../img/teste.webp'
 import { FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from 'react-router-dom'
@@ -14,7 +14,7 @@ function Organizadores() {
                     <h1>Integrantes</h1>
 
                     <div className={styles.principal}>
-                        <img src={user} className={styles.user} alt='retrato' />
+                        <img src={user} loading="lazy" className={styles.user} alt='retrato' />
                         <div className={styles.leftContent}>
                             <h3><i>Líder</i></h3>
                             <p>Lorem ipsum dolor sit amet. Vel omnis tempora 33 vitae nostrum sed similique expedita qui quae accusantium aut molestiae quia non optio nisi. </p>
@@ -32,7 +32,7 @@ function Organizadores() {
                         <ul>
                             <li>
                                 <p><i>Integrante 1</i></p>
-                                <img src={user} className={styles.user} alt='retrato' />
+                                <img src={user} loading="lazy" className={styles.user} alt='retrato' />
                                 <p>Lorem ipsum dolor sit amet. Vel omnis tempora 33
                                     vitae nostrum sed similique expedita.</p>
                                 <div className={styles.icon}>
@@ -42,7 +42,7 @@ function Organizadores() {
                             </li>
                             <li>
                                 <p><i>Integrante 2</i></p>
-                                <img src={user} className={styles.user} alt='retrato' />
+                                <img src={user} loading="lazy" className={styles.user} alt='retrato' />
                                 <p>Lorem ipsum dolor sit amet. Vel omnis tempora 33
                                     vitae nostrum sed similique expedita.</p>
                                 <div className={styles.icon}>
@@ -52,7 +52,7 @@ function Organizadores() {
                             </li>
                             <li>
                                 <p><i>Integrante 3</i></p>
-                                <img src={user} className={styles.user} alt='retrato' />
+                                <img src={user} loading="lazy" className={styles.user} alt='retrato' />
                                 <p>Lorem ipsum dolor sit amet. Vel omnis tempora 33
                                     vitae nostrum sed similique expedita.</p>
                                 <div className={styles.icon}>
@@ -62,7 +62,7 @@ function Organizadores() {
                             </li>
                             <li>
                                 <p><i>Integrante 4</i></p>
-                                <img src={user} className={styles.user} alt='retrato' />
+                                <img src={user} loading="lazy" className={styles.user} alt='retrato' />
                                 <p>Lorem ipsum dolor sit amet. Vel omnis tempora 33
                                     vitae nostrum sed similique expedita.</p>
                                 <div className={styles.icon}>

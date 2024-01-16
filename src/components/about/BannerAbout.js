@@ -1,13 +1,13 @@
 import React from 'react'
-import banner from '../img/banner.png';
+import banner from '../img/banner.webp';
 import styles from './BannerAbout.module.css';
-import info from '../img/info.png'
+import info from '../img/info.webp'
 import { Link } from 'react-router-dom'
 
 function BannerAbout() {
     return (
         <div>
-            <img src={banner} className={styles['banner-img']} alt="Banner" />
+            <img src={banner} loading="lazy" className={styles['banner-img']} alt="Banner" />
             <section className={styles.sobre_section}>
                 <img src={info} alt='info' />
                 <div className={styles.info}>

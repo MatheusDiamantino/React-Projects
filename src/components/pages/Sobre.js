@@ -1,5 +1,4 @@
 import React from 'react';
-import Map from '../layout/Map'
 import BannerAbout from '../about/BannerAbout';
 import Organizadores from '../about/Organizadores';
 
@@ -10,8 +9,6 @@ function Sobre() {
       <BannerAbout />
 
       <Organizadores />
-
-      <Map />
 
     </div>
   );

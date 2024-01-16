@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import styles from "../layout/Footer.module.css";
 import { Link } from 'react-router-dom'
 
