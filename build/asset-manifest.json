@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/palacecode/static/css/main.7f4c5978.css",
-    "main.js": "/palacecode/static/js/main.9be63f44.js",
+    "main.css": "/palacecode/static/css/main.b27238f4.css",
+    "main.js": "/palacecode/static/js/main.19f230cd.js",
     "static/media/eventos.webp": "/palacecode/static/media/eventos.01fd38b1c29645cbb0df.webp",
     "static/media/pastordoze1.webp": "/palacecode/static/media/pastordoze1.113373ceda1c5045f362.webp",
     "static/media/culto.webp": "/palacecode/static/media/culto.4629ecfb4a9c4fbd25d5.webp",
@@ -18,11 +18,11 @@
     "static/media/cartoon.webp": "/palacecode/static/media/cartoon.36ded3d90a4c5ce02d02.webp",
     "index.html": "/palacecode/index.html",
     "static/media/loading.svg": "/palacecode/static/media/loading.bf7239b85605322065ebd6ddfb835243.svg",
-    "main.7f4c5978.css.map": "/palacecode/static/css/main.7f4c5978.css.map",
-    "main.9be63f44.js.map": "/palacecode/static/js/main.9be63f44.js.map"
+    "main.b27238f4.css.map": "/palacecode/static/css/main.b27238f4.css.map",
+    "main.19f230cd.js.map": "/palacecode/static/js/main.19f230cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f4c5978.css",
-    "static/js/main.9be63f44.js"
+    "static/css/main.b27238f4.css",
+    "static/js/main.19f230cd.js"
   ]
 }
