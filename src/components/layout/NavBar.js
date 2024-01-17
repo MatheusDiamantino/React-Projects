@@ -1,49 +1,45 @@
-import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import { Link } from "react-router-dom";
 import Container from "./Container";
 import logo from '../img/logo.png';
-import { FaUserAlt } from "react-icons/fa";
 
 function NavBar() {
-  const [mostrarOpcoes, setMostrarOpcoes] = useState(false);
-
-  const handlePerfilClick = () => {
-    setMostrarOpcoes(!mostrarOpcoes);
-  };
-
   return (
-    <nav className={styles.navbar}>
+    <nav className={`navbar navbar-expand-lg ${styles.navbar}`}>
       <Container>
-        <Link to="/"><img src={logo} loading="lazy" alt="logo" className={styles.logo} /> </Link>
-        <ul className={styles.list}>
-          <li className={styles.item}>
-            <Link to="/">Inicio</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to="/sobre">Sobre</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to="/cultos">Cultos</Link>
-          </li>
-
-          <li className={`${styles.login} ${styles.botaoCTA_2}`}>
-            <div className={styles.perfilContainer} onClick={handlePerfilClick}>
-              {/* Aqui você pode substituir pelo seu ícone de perfil */}
-              <FaUserAlt className={styles.iconePerfil} />
-            </div>
-
-            {mostrarOpcoes && (
-              <div className={styles.opcoesContainer}>
-                {/* Opção 1 */}
-                <button className={styles.botaoCTA_2}>Entrar</button>
-
-                {/* Opção 2 */}
-                <button className={styles.botaoCTA_2}>Registrar</button>
-              </div>
-            )}
-          </li>
-        </ul>
+        <Link to="/" className="navbar-brand">
+          <img src={logo} loading="lazy" alt="logo" className={styles.logo} />
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className={`navbar-nav ml-auto ${styles.list}`}>
+            <li className={`nav-item ${styles.item}`}>
+              <Link to="/" className={`nav ${styles.links}`}>
+                Inicio
+              </Link>
+            </li>
+            <li className={`nav-item ${styles.item}`}>
+              <Link to="/sobre" className="nav">
+                Sobre
+              </Link>
+            </li>
+            <li className={`nav-item ${styles.item}`}>
+              <Link to="/cultos" className="nav">
+                Cultos
+              </Link>
+            </li>
+          </ul>
+        </div>
       </Container>
     </nav>
   );

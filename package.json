@@ -1,7 +1,7 @@
 {
   "name": "nome-do-seu-projeto",
   "version": "0.1.0",
-  "homepage": "https://seguralogistica.net.br/palacecode",
+  "homepage": "https://reedificandooaltar.com.br",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",

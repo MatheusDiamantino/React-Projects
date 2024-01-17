@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "./BannerCultos.module.css";
-import ButtonLink from '../layout/ButtonLink';
 
 function BannerCultos() {
     return (
@@ -18,8 +17,8 @@ function BannerCultos() {
                         Venha fazer parte da nossa comunidade! <br />Não se esqueça de trazer
                         sua Bíblia e um coração aberto para adorar.
                     </p>
-                    <div className={styles.btn_cultos}>
-                        <ButtonLink to="/cultos" text="Participe agora" />
+                    <div >
+                        <button className={styles.btn_cultos}>Participe agora</button>
                     </div>
                 </div>
             </section>

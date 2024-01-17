@@ -19,7 +19,19 @@ body {
     body {
         font-size: 14px;
     }
-    
-    /* Adicione estilos específicos para telas menores aqui */
-    /* Por exemplo, ajuste o espaçamento entre elementos, altere o layout, etc. */
+
+    /* Additional styles for screens with a maximum width of 768px */
+    /* For example, adjust spacing, layout, etc. */
+    /* You can also override existing styles within this media query */
+
+    /* Example: Centering elements on smaller screens */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Example: Adjusting margins for smaller screens */
+    .element {
+        margin: 5px;
+    }
 }

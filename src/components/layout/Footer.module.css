@@ -32,7 +32,7 @@
   color: #888888;
 }
 
-.links{
+.links {
   color: white;
   text-decoration: none;
 }
@@ -47,12 +47,16 @@
 /* Adicione regras de mídia para tornar o rodapé responsivo */
 @media screen and (max-width: 768px) {
   .social_list {
-    flex-direction: column;
-    align-items: center; /* Centraliza os itens na coluna */
+    flex-direction: row; /* Display items in a row */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .social_list li {
+    margin: 0 0.5em; /* Adjust margin for items in a row */
   }
   
-  .social_list li {
-    margin: 0.5em 0; /* Adapta a margem para itens na coluna */
+  .copy_right {
+    margin-top: 1em; /* Add some space below the social icons on smaller screens */
   }
 }
 

@@ -1,8 +1,9 @@
 .lider {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   background-color: black;
 }
 
@@ -13,28 +14,25 @@
 .lider ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lider ul li {
-  display: flex;
-  flex-direction: column;
   color: white;
-  align-items: center;
   position: relative;
-  margin: 10px;
+  margin: 10px 0;
   text-align: center;
-  /* Ajustado para centralizar o texto em telas menores */
 }
 
 .lider ul img {
+  width: 70%;
+  max-width: 200px;
+  /* Adapte conforme necessário */
   height: auto;
-  max-width: 70%;
-  display: block;
-  margin: 0 auto;
-  clip-path: circle(50%);
-  margin-bottom: 10px;
-  /* Adicionado espaçamento inferior para melhorar visualização em telas menores */
-  transition: 2s;
+  border-radius: 50%;
+  margin: 10px 0;
+  transition: transform 2s;
 }
 
 .lider ul img:hover {
@@ -46,11 +44,8 @@
   color: #5c5c5c96;
 }
 
-
 .lider h1 {
   font-weight: bold;
-  display: flex;
-  text-align: center;
   margin-top: 20px;
   text-decoration-line: overline;
   text-decoration-color: white;
@@ -58,14 +53,15 @@
 }
 
 .principal {
-  margin-bottom: 5em;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  /* Alterado para empilhar os elementos */
 }
 
 .icon {
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -73,7 +69,7 @@
   font-size: 25px;
   margin: 0 15px;
   color: white;
-  transition: 1s;
+  transition: color 1s, transform 1s;
 }
 
 .icon svg:hover {
@@ -81,52 +77,21 @@
   transform: scale(1.1);
 }
 
-/* Adicionado media query para ajustar o layout em telas menores */
 @media only screen and (max-width: 768px) {
-  .lider {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .lider ul li {
+  .lider ul img {
     width: 100%;
     /* Ocupar toda a largura em telas menores */
   }
-
-  .lider h1 {
-    margin-top: 10px;
-    /* Reduzido o espaçamento superior em telas menores */
-  }
-
-  .icon {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
-.principal {
-  margin-bottom: 5em;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  /* Adicionado para ajustar em telas menores */
-}
-
-
-.organizadores p {
-  text-align: center;
-  margin-top: 20px;
-}
-/* Estilos para .leftContent */
 .leftContent {
   flex: 1;
+  text-align: center;
 }
 
 .leftContent h3 {
   font-size: 30px;
   color: rgb(233, 180, 5);
-  text-align: left;
-  align-items: center;
   font-weight: bold;
   text-decoration-line: underline;
 }
@@ -134,56 +99,30 @@
 .leftContent p {
   font-size: 20px;
   color: white;
-  text-align: center;
-  align-items: center;
-  margin-right: 30px;
-  margin-top: 5%;
+  margin: 20px;
 }
 
 .user {
-  height: auto;
-  max-width: 30%; /* Ocupar toda a largura em telas menores */
-  margin-top: 30px;
-  clip-path: circle(50%);
-  transition: 2s;
-  margin-right: 0; /* Removido margin-right para melhor ajuste em telas menores */
+  width: 70%;
+  /* Ocupar toda a largura em telas menores */
+  max-width: 300px;
+  /* Adapte conforme necessário */
+  margin: 20px 0;
 }
 
-.user:hover {
-  transform: scale(1.06);
-}
-
-/* Estilos para .section_container */
 .section_container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 0 auto;
   background-image: url(../img/cartoon.webp);
-  flex-wrap: wrap; /* Adicionado para ajustar em telas menores */
 }
 
-/* Estilos para .section_content */
 .section_content {
-  position: relative;
-  width: 100%; /* Ocupar toda a largura em telas menores */
+  width: 100%;
 }
 
 .section_content h1,
 .section_content h2 {
-  text-align: center;
-  margin: 30px 30px;
+  margin: 15px 0;
   padding: 10px;
-}
-
-.section_content h1::before,
-.section_content h1::after {
-  width: 100%; /* Ocupar toda a largura em telas menores */
-}
-
-/* Adicionado media query para ajustar o layout em telas menores */
-@media only screen and (max-width: 768px) {
-  .section_content h1,
-  .section_content h2 {
-    margin: 15px 15px;
-  }
 }

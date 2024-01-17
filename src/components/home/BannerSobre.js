@@ -27,8 +27,8 @@ function BannerSobre() {
                             eventos e atividades. Estamos entusiasmados para compartilhar a
                             jornada da fé contigo!
                         </p>
-                        <div className={styles.btn_sobre}>
-                            <ButtonLink to="/sobre" text="Descubra mais" />
+                        <div >
+                            <button className={styles.btn_sobre}>Descubra mais</button>
                         </div>
                     </div>
                 </div>

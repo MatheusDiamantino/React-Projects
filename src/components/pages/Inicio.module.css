@@ -1,0 +1,48 @@
+/* Inicio.module.css */
+
+.container {
+    /* Add general styles for your container */
+
+    /* Example: Center content in the container */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add responsive styles using media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        /* Adjust styles for screens with a maximum width of 768px */
+
+        /* Example: Reduce margin or padding */
+        margin: 10px;
+    }
+
+    /* Add specific styles for individual components if needed */
+    .banner-section {
+        /* Styles for BannerSection on smaller screens */
+        /* Example: Adjust font size or padding */
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .banner-cultos {
+        /* Styles for BannerCultos on smaller screens */
+        /* Example: Adjust font size or padding */
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .banner-sobre {
+        /* Styles for BannerSobre on smaller screens */
+        /* Example: Adjust font size or padding */
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .forms {
+        /* Styles for Forms on smaller screens */
+        /* Example: Adjust font size or padding */
+        font-size: 20px;
+        padding: 10px;
+    }
+}

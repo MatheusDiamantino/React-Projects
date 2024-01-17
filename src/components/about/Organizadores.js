@@ -10,23 +10,19 @@ function Organizadores() {
         <div>
             <section className={styles.lider}>
                 <div className={styles.integrantes}>
-                    <h5>Conheça nossa equipe!</h5>
                     <h1>Integrantes</h1>
 
                     <div className={styles.principal}>
                         <img src={user} loading="lazy" className={styles.user} alt='retrato' />
                         <div className={styles.leftContent}>
-                            <h3><i>Líder</i></h3>
+                            <h3><i>Pastor</i></h3>
                             <p>Lorem ipsum dolor sit amet. Vel omnis tempora 33 vitae nostrum sed similique expedita qui quae accusantium aut molestiae quia non optio nisi. </p>
                             <p>Qui sapiente fugiat et voluptatem corporis sed autem maxime et libero numquam est animi accusantium sed iure nobis et dolorum debitis? Et minima autem sed nihil cumque ut voluptas enim.</p>
-                            <div className={styles.icon}>
-                                <Link to="/"><MdEmail /></Link>
-                                <Link to="/"><FaFacebook /></Link>
-                            </div>
+
                         </div>
                     </div>
 
-                    <h1>Organizadores</h1>
+                    {/* <h1>Organizadores</h1>
 
                     <div className={styles.organizadores}>
                         <ul>
@@ -71,7 +67,7 @@ function Organizadores() {
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </div>
