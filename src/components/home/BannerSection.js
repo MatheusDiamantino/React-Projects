@@ -6,7 +6,7 @@ import eventos from '../img/eventos.webp'
 function BannerSection() {
   return (
     <section className={styles.mainSection}>
-      <Parallax bgImage={eventos} loading="lazy" strength={300}>
+      <Parallax bgImage={eventos} loading="lazy" strength={500}>
         <div className={`${styles.responsiveContent} ${styles.container}`}>
           <h2>
             "Posso todas as coisas naquele que me fortalece." <br /> Filipenses

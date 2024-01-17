@@ -1,9 +1,86 @@
+/* BannerAbout.module.css */
+.container {
+    background: url(../img/banner.webp) center/cover;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-position 0.5s ease;
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+.columnWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contentWrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.responsiveContent h2 {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 24px;
+    /* Ajustado o tamanho da fonte */
+}
+
+.responsiveContent h2::before,
+.responsiveContent h2::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    box-sizing: border-box;
+    border: 3px white solid;
+    top: -3px;
+    left: -3px;
+    pointer-events: none;
+}
+
+.responsiveContent h2::before {
+    transform: translate(6px, 6px);
+}
+
+.responsiveContent h2::after {
+    transform: translate(-6px, -6px);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: 70vh;
+    }
+
+    .columnWrapper {
+        flex-direction: column;
+    }
+
+    .responsiveContent h2 {
+        font-size: 18px;
+    }
+}
+
+
 .sobre_section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* Updated to column layout for smaller screens */
     align-items: center;
-    text-align: left;
-    /* Alterado para alinhar o texto à esquerda */
+    text-align: center;
     padding: 20px;
 }
 
@@ -16,30 +93,37 @@
 .sobre_section img {
     width: 100%;
     max-width: 50%;
+    /* Adjusted max-width for smaller screens */
     height: auto;
-    align-self: flex-end;
-    margin-top: 15px; /* Adicionado espaçamento superior em telas menores */
-}
-
-.info p {
-    color: black;
+    margin-top: 15px;
 }
 
 .info {
-    margin: 30px;
+    margin: 20px;
+    /* Adjusted margin for better spacing on smaller screens */
+    text-align: center;
 }
 
 .info h5 {
     font-size: 15px;
     color: #5c5c5c96;
-    align-items: left;
+    margin-bottom: 10px;
+    /* Added margin for better spacing */
 }
 
 .info h1 {
     font-weight: bold;
-    letter-spacing: 5px;
-    align-items: left;
+    letter-spacing: 3px;
     color: black;
+    margin-bottom: 15px;
+    /* Added margin for better spacing */
+}
+
+.info p {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+    /* Added margin for better spacing */
 }
 
 .btn {
@@ -57,7 +141,15 @@
     transform: 0.5s;
 }
 
-  .btn:hover {
+.btn:hover {
     color: rgba(236, 235, 235, 0.76);
     transform: scale(1.1);
-  }
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media only screen and (max-width: 767px) {
+    .sobre_section img {
+        max-width: 100%;
+        /* Adjusted max-width for smaller screens */
+    }
+}

@@ -3,32 +3,32 @@
     display: flex;
     background-color: black;
     align-items: center;
+    padding: 30px; /* Added padding for better spacing */
 }
 
 .imagem {
     max-width: 40%;
+    width: 100%; /* Make the image fill its container */
     margin-right: 20px;
-    margin: 30px;
     border: 1px solid black;
     border-radius: 3%;
 }
 
 .texto {
     flex-grow: 1; /* Para ocupar o espaço restante na linha */
+    color: rgb(255, 255, 255); /* Moved color to the parent container */
 }
 
-.texto h3 {
+.texto h3, .texto p {
     text-align: left;
     margin: 0;
     font-weight: bold;
-    color: rgb(255, 255, 255);
 }
 
 .texto p {
-    text-align: left;
-    margin-right: 20px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+    margin-bottom: 20px; /* Added margin to separate paragraphs */
+    margin-top: 2em;
+
 }
 
 .btn_sobre {
@@ -37,11 +37,13 @@
     text-decoration: none;
     border-radius: 5px;
     letter-spacing: 2px;
-    display: inline-block;
     font-weight: 600;
     border: white 1px solid;
     transition: 1s;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .btn_sobre:hover {
@@ -53,16 +55,13 @@
 @media only screen and (max-width: 1024px) {
     .conteudo {
         flex-direction: column;
+        padding: 20px; /* Adjusted padding for better spacing */
     }
 
     .imagem {
         max-width: 100%;
         margin: 0;
         margin-bottom: 20px;
-    }
-
-    .texto p {
-        margin-right: 0;
     }
 }
 

@@ -1,0 +1,42 @@
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+.container{
+    margin-bottom: 0;
+    margin-top: 5em;
+}
+
+.btn {
+    padding: 0.4em 0.9em;
+    text-decoration: none;
+    transition: 0.5s;
+    border: none;
+    color: white;
+    background-color: black;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn:hover {
+    color: rgb(119, 119, 119);
+    transform: scale(1.1);
+}

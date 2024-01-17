@@ -1,0 +1,14 @@
+/* Sobre.css */
+
+/* Add general styles that apply to both mobile and desktop */
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    /* Add styles specific to mobile devices here */
+  }
+  
+  /* Styles for desktop devices */
+  @media only screen and (min-width: 768px) {
+    /* Add styles specific to desktop devices here */
+  }
+  

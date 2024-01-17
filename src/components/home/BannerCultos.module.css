@@ -5,35 +5,33 @@
 }
 
 .conteudo2 h3 {
-    margin: 45px;
-    margin-bottom: 0;
+    margin: 1em auto 2%;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 2.5em;
     color: black;
     text-align: center;
-    margin-top: 80px;
 }
 
 .conteudo2 h4 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.5em;
     color: black;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1em;
 }
 
 .conteudo2 h5 {
-    margin: 30px;
+    margin: 1em 2%;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.5em;
     color: black;
     text-align: center;
 }
 
 .conteudo2 p {
-    margin: 30px;
+    margin: 1em 2%;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.5em;
     color: black;
     text-align: center;
 }
@@ -46,15 +44,20 @@
     border: none;
     padding: 0.5em 1em;
     text-decoration: none;
+    font-size: 18px;
     border-radius: 5px;
     letter-spacing: 2px;
-    display: inline-block;
+    display: block;
+    /* Change to block to take full width */
     font-weight: 600;
     transition: 1s;
     background-color: black;
-    margin-bottom: 30px;
-    margin-left: 34em;
+    margin: 0 auto;
+    margin-top: 2em;
+    color: white;
+    margin-bottom: 2em;
 }
+
 
 .btn_cultos:hover {
     transform: scale(1.1);
@@ -64,45 +67,39 @@
 /* Estilos para telas médias (tablets, smartphones em modo paisagem) */
 @media only screen and (max-width: 1024px) {
     .conteudo2 h3 {
-        font-size: 40px;
-        margin-top: 60px;
+        font-size: 2em;
+        margin-top: 3em;
     }
 
     .conteudo2 h4 {
-        font-size: 25px;
-        margin-top: 20px;
+        font-size: 1.25em;
+        margin-top: 1em;
     }
 
     .conteudo2 h5,
     .conteudo2 p {
-        font-size: 25px;
-        margin: 20px;
+        font-size: 1.25em;
+        margin: 1em 2%;
     }
 
-    .btn_cultos {
-        margin-left: 20em;
-    }
 }
 
 /* Estilos para telas pequenas (smartphones em modo retrato) */
 @media only screen and (max-width: 600px) {
     .conteudo2 h3 {
-        font-size: 30px;
-        margin-top: 40px;
+        font-size: 1.5em;
+        margin-top: 2em;
     }
 
     .conteudo2 h4 {
-        font-size: 20px;
-        margin-top: 15px;
+        font-size: 1em;
+        margin-top: 0.75em;
     }
 
     .conteudo2 h5,
     .conteudo2 p {
-        font-size: 20px;
-        margin: 15px;
+        font-size: 1em;
+        margin: 0.75em 2%;
     }
 
-    .btn_cultos {
-        margin-left: 10em;
-    }
 }
