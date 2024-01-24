@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./BannerCultos.module.css";
+import { Link } from 'react-router-dom'
 
 function BannerCultos() {
     return (
@@ -18,7 +19,8 @@ function BannerCultos() {
                         sua Bíblia e um coração aberto para adorar.
                     </p>
                     <div >
-                        <button className={styles.btn_cultos}>Participe agora</button>
+                        <Link to="/cultos" className={styles.links}>
+                            <button className={styles.btn_cultos}>Participe agora</button></Link>
                     </div>
                 </div>
             </section>

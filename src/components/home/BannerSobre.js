@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./BannerSobre.module.css";
-import ButtonLink from '../layout/ButtonLink';
+import { Link } from 'react-router-dom';
 import sobre from '../img/sobre.webp'
 
 function BannerSobre() {
@@ -28,7 +28,10 @@ function BannerSobre() {
                             jornada da fé contigo!
                         </p>
                         <div >
-                            <button className={styles.btn_sobre}>Descubra mais</button>
+                            <Link to="/cultos" className={styles.links}>
+
+                                <button className={styles.btn_sobre}>Descubra mais</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

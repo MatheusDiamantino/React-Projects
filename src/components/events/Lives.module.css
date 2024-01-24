@@ -21,6 +21,10 @@
     margin-bottom: 20px;
 }
 
+span{
+    color: rgb(255, 217, 0);
+}
+
 .live img {
     width: 100%;
     height: auto;
