@@ -27,7 +27,7 @@ function Forms() {
 
                     <div className="col-md-3 text-center">
                         <ul className={`list-unstyled mb-0 ${styles.contato_item}`}>
-                            <Link to="https://www.google.com.br/maps/place/R.+das+Orqu%C3%ADdeas,+328+-+Jardim+Marilia,+Jandira+-+SP,+06606-320/@-23.5341909,-46.9122251,17z/data=!3m1!4b1!4m5!3m4!1s0x94cf06aeddb769db:0xe5c82c968d57cd44!8m2!3d-23.5341909!4d-46.9096502?entry=ttu" className={styles.links}>
+                            <Link to="https://www.google.com.br/maps/@-23.533203,-46.9098216,3a,75y,171h,90t/data=!3m7!1e1!3m5!1s6zpC8ydb4Mhn2QRdsB_CdA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D6zpC8ydb4Mhn2QRdsB_CdA%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D170.99721%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu" className={styles.links}>
                                 <li className="d-flex align-items-center">
                                     <FaHome className={`mr-2 ${styles.icon}`} />
                                     <p>Rua das Orquídeas, 328, Jandira/SP</p>

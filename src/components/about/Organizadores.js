@@ -8,7 +8,7 @@ import styles from './Organizadores.module.css';
 function Organizadores() {
     return (
         <div>
-            <section className={styles.lider}>
+            {/* <section className={styles.lider}>
                 <div className={styles.integrantes}>
                     <h1>Integrantes</h1>
 
@@ -20,7 +20,7 @@ function Organizadores() {
                             <p>Qui sapiente fugiat et voluptatem corporis sed autem maxime et libero numquam est animi accusantium sed iure nobis et dolorum debitis? Et minima autem sed nihil cumque ut voluptas enim.</p>
 
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* <h1>Organizadores</h1>
 
@@ -68,8 +68,8 @@ function Organizadores() {
                             </li>
                         </ul>
                     </div> */}
-                </div>
-            </section>
+                {/* </div> */}
+            {/* </section> */}
         </div>
     )
 }

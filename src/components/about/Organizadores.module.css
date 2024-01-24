@@ -1,4 +1,4 @@
-.lider {
+/* .lider {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,6 @@
 .lider ul img {
   width: 70%;
   max-width: 200px;
-  /* Adapte conforme necessário */
   height: auto;
   border-radius: 50%;
   margin: 10px 0;
@@ -56,7 +55,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* Alterado para empilhar os elementos */
 }
 
 .icon {
@@ -80,7 +78,6 @@
 @media only screen and (max-width: 768px) {
   .lider ul img {
     width: 100%;
-    /* Ocupar toda a largura em telas menores */
   }
 }
 
@@ -104,9 +101,7 @@
 
 .user {
   width: 70%;
-  /* Ocupar toda a largura em telas menores */
   max-width: 300px;
-  /* Adapte conforme necessário */
   margin: 20px 0;
 }
 
@@ -125,4 +120,4 @@
 .section_content h2 {
   margin: 15px 0;
   padding: 10px;
-}
+} */

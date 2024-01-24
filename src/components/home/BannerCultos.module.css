@@ -4,6 +4,11 @@
     background-color: white;
 }
 
+.links{
+    text-decoration: none;
+}
+
+
 .conteudo2 h3 {
     margin: 1em auto 2%;
     font-weight: bold;
