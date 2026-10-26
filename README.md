@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Ministério Reedificando o Altar — site (1ª versão)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **Repositório arquivado.** Esta é a **primeira versão** do site da igreja Ministério Reedificando o Altar, feita em React em 2023/2024.
+> Ela foi substituída por uma nova versão: **[MatheusDiamantino/reedificando-o-altar](https://github.com/MatheusDiamantino/reedificando-o-altar)**, no ar em **[reedificandooaltar.com.br](https://reedificandooaltar.com.br)**.
 
-## Available Scripts
+## Contexto
 
-In the project directory, you can run:
+Site institucional desenvolvido de forma voluntária para a igreja, como um dos meus primeiros projetos em React. O código fica aqui como registro da evolução do projeto.
 
-### `npm start`
+## O que tem nesta versão
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Início**: banner, boas-vindas, horário dos cultos e bloco de contato com links para localização no Google Maps, e-mail e Facebook.
+- **Sobre**: apresentação do ministério e seção de organizadores/integrantes.
+- **Cultos**: lista de lives anteriores com links para os vídeos no Facebook e tela de carregamento.
+- **Login**: tela apenas visual (sem autenticação).
+- Navegação com React Router (`HashRouter`), layout responsivo com Bootstrap e CSS Modules.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Stack
 
-### `npm test`
+- React 18 (Create React App)
+- React Router 6
+- Bootstrap 5, React Icons, React Parallax
+- CSS Modules
+- json-server (`db.json`) como backend de teste
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como rodar localmente
 
-### `npm run build`
+```bash
+git clone https://github.com/MatheusDiamantino/React-Projects.git
+cd React-Projects
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acesse `http://localhost:3000`. O comando `npm run backend` sobe o json-server na porta 5000.
